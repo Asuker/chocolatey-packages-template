@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>streamwhatyouhear</id>
+    <version>1.4.16069</version>
+    <title>Stream What You Hear</title>
+    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/streamwhatyouhear/</packageSourceUrl>
+    <iconUrl>https://raw.githubusercontent.com/Jarcho/chocolatey-packages/783da1bead8dbf02b53faebfa441339013803c10/streamwhatyouhear/icon.png</iconUrl>
+    <owners>Jason Newcomb</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <authors>Proton Technologies AG.</authors>
+    <projectUrl>http://www.streamwhatyouhear.com/</projectUrl>
+    <copyright>2015-2016 Stream What You Hear</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.en.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/StreamWhatYouHear/SWYH</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/StreamWhatYouHear/SWYH/issues</bugTrackerUrl>
+    <tags>streamwhatyouhear</tags>
+    <description>Stream What You Hear (SWYH) is a Windows application to broadcast the sound of your computer (ie: “what you hear”) on an UPnP/DLNA device such as TVs, amps, network receivers, game consoles, etc...</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

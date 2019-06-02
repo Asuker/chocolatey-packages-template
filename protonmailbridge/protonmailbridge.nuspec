@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>protonmailbridge</id>
+    <version>1.1.4</version>
+    <title>ProtonMail Bridge</title>
+    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/protonmailbridge/</packageSourceUrl>
+    <iconUrl>https://raw.githubusercontent.com/Jarcho/chocolatey-packages/43dda0b49514396e66b487a5faf1e6aaec94ace2/protonmailbridge/icon.png</iconUrl>
+    <owners>Jason Newcomb</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <authors>Proton Technologies AG.</authors>
+    <projectUrl>https://protonmail.com/bridge/</projectUrl>
+    <copyright>2018 Proton Technologies AG.</copyright>
+    <tags>protonmail email</tags>
+    <description>The ProtonMail Bridge is an application for paid users that runs on your computer in the background and seamlessly encrypts and decrypts your mail as it enters and leaves your computer. It allows for full integration of your ProtonMail account with any program that supports IMAP and SMTP such as Microsoft Outlook, Mozilla Thunderbird and Apple Mail.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

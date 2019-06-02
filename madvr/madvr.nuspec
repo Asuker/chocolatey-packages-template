@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>madvr</id>
+    <version>0.92.17</version>
+    <title>madVR</title>
+    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/madvr/</packageSourceUrl>
+    <iconUrl>http://cdn.rawgit.com/Jarcho/chocolatey-packages/master/madvr/icon.png</iconUrl>
+    <owners>Jason Newcomb</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <authors>Mathias Rauen</authors>
+    <projectUrl>http://madvr.com/</projectUrl>
+    <copyright>2009-2018 Mathias Rauen</copyright>
+    <bugTrackerUrl>http://madvr.bugs.madshi.net/</bugTrackerUrl>
+    <tags>madvr</tags>
+    <description>madVR is a high quality DirectShow video renderer.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

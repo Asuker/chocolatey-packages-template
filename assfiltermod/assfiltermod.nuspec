@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>assfiltermod</id>
+    <version>0.4</version>
+    <title>AssFilterMod</title>
+    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/assfiltermod</packageSourceUrl>
+    <owners>Jason Newcomb</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <authors>Blitzker</authors>
+    <projectUrl>https://github.com/Blitzker/assfiltermod</projectUrl>
+    <copyright>2016-2018 Blitzker</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Blitzker/assfiltermod</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Blitzker/assfiltermod/issues</bugTrackerUrl>
+    <tags>assfiltermod</tags>
+    <description>AssFilter is an Open-source DirectShow subtitle renderer based on libass and the SubRenderIntf interfaces.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

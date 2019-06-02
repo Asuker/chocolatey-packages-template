@@ -1,8 +1,9 @@
 # AU template: https://github.com/majkinetor/au-packages-template
 
 version: '{build}'
+pull_requests:
+  do_not_increment_build_number: true
 max_jobs: 1
-image: WMF 5
 # History plugin requires complete log
 #clone_depth: 5
 branches:
@@ -19,30 +20,30 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: Jarcho/chocolatey-packages
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: PUANbxn/ow7IatafIjl4Wdy0eUKOFmLz58wOP4y3+bUZ3bG8EnB3ZqRd44rtnzoM
 
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
-  mail_pass:
-    secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
-  mail_server: smtp.gmail.com
-  mail_port: 587
-  mail_enablessl: true
+    secure: /fXCoAzjTk+q6DTx1XLtq09jJ03F4x+Kvu7WGK0Pe74=
+#   mail_pass:
+#     secure: JC7w6W3QEkECYKfw1uucIZ2tZZRkzkhitew/NRBdWHM=
+#   mail_server: smtp.gmail.com
+#   mail_port: 587
+#   mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id:
+  gist_id: 727b5bf67555b82429b3c5750d117239
 
   # Force test: gist id for test results
-  gist_id_test:
+  gist_id_test: 72c55b7390c436fe566f18e54a424628
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: 3vygv7VKXpCvy9qX7V/3jrDiVRWeu/hEZrIXW9G5qOXHCqMJIl0KKwNZr4+3eGMh # https://ci.appveyor.com/tools/encrypt
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
@@ -53,6 +54,7 @@ install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
 - ps: $PSVersionTable
 - git --version
+- choco --version
 - ps: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
@@ -62,6 +64,9 @@ install:
     '  {0,-20} {1}' -f 'SCHEDULED BUILD:', ($Env:APPVEYOR_SCHEDULED_BUILD -eq 'true')
     '  {0,-20} {1}' -f 'FORCED BUILD:'   , ($Env:APPVEYOR_FORCED_BUILD    -eq 'true')
     '  {0,-20} {1}' -f 'RE BUILD:'       , ($Env:APPVEYOR_RE_BUILD        -eq 'true')
+
+# Uncomment the below line if you are using any of the functions from chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension. Ensure you also have it listed in your package's dependencies
+# - cinst chocolatey-core.extension
 
 build_script:
 - ps: |
@@ -81,7 +86,10 @@ build_script:
                     Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
                     $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
                     if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
-                    pushd $package_dir; choco pack; Push-Package; popd
+                    pushd $package_dir
+                      if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
+                      choco pack; Push-Package;
+                    popd
                 }
                 return
             }
