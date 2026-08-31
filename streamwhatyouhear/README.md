@@ -1,0 +1,3 @@
+# <img src="https://rawcdn.githack.com/Jarcho/chocolatey-packages/783da1bead8dbf02b53faebfa441339013803c10/streamwhatyouhear/icon.png" width="48" height="48"/> [streamwhatyouhear](https://chocolatey.org/packages/streamwhatyouhear)
+
+Stream What You Hear (SWYH) is a Windows application to broadcast the sound of your computer (ie: “what you hear”) on an UPnP/DLNA device such as TVs, amps, network receivers, game consoles, etc...

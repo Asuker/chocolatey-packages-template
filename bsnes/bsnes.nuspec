@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>bsnes</id>
+    <version>1.15</version>
+    <title>bsnes</title>
+    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/bsnes/</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/f282c277f6d8aa7d92d62429564b013807f3162d/bsnes/icon.png</iconUrl>
+    <owners>Jason Newcomb</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <authors>byuu</authors>
+    <projectUrl>https://github.com/bsnes-emu/bsnes</projectUrl>
+    <licenseUrl>https://github.com/bsnes-emu/bsnes/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/bsnes-emu/bsnes</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/bsnes-emu/bsnes/issues</bugTrackerUrl>
+    <copyright>2004-2020 byuu</copyright>
+    <tags>bsnes snes sfc emulator super-nintendo super-famicom</tags>
+    <summary>A multi-platform Super Nintendo (Super Famicom) emulator that focuses on performance, features, and ease of use.</summary>
+    <description><![CDATA[bsnes is a multi-platform Super Nintendo (Super Famicom) emulator, originally developed by byuu, which focuses on performance, features, and ease of use.
+
+## Unique Features
+
+- True Super Game Boy emulation (using the SameBoy core by Lior Halphon)
+- HD mode 7 graphics (by DerKoun) with optional supersampling
+- Low-level emulation of all SNES coprocessors (DSP-#, ST-01#, Cx4)
+- Multi-threaded PPU graphics renderer from csnes
+- Speed mode settings which retain smooth audio output (50%, 75%, 100%, 150%, 200%)
+- Built-in games database with thousands of game entries
+- Built-in cheat code database for hundreds of popular games (by mightymo)
+- Built-in save state manager with screenshot previews and naming capabilities
+- Customizable per-byte game mappings to support any cartridges, including prototype games
+- 7-zip decompression support
+- Extensive Satellaview emulation, including BS Memory flash write and wear-leveling emulation
+- Optional higan gamepak support (standard game image files are also fully supported!)
+- Advanced mapping system allowing multiple bindings to every emulated input
+
+## Standard Features
+
+- MSU1 support
+- BPS and IPS soft-patching support
+- Save states with undo and redo support (for reverting accidental saves and loads)
+- OpenGL multi-pass pixel shaders
+- Several built-in software filters, including HQ2x (by MaxSt) and snes_ntsc (by blargg)
+- Adaptive sync and dynamic rate control for perfect audio/video synchronization
+- Just-in-time input polling for minimal input latency
+- Run-ahead support for removing internal game engine input latency
+- Support for Direct3D exclusive mode video
+- Support for WASAPI exclusive mode low-latency audio
+- Periodic auto-saving of game saves
+- Auto-saving of states when unloading games, and auto-resuming of states when reloading games
+- Sprite limit disable support
+- Cubic audio interpolation support
+- Optional high-level emulation of most SNES coprocessors
+- Optional emulation of flaws in older emulators for compatibility with older unofficial software
+- CPU, SA1, and SuperFX overclocking support
+- Frame advance support
+- Screenshot support
+- Cheat code search support
+- Movie recording and playback support
+- Rewind support
+- HiDPI support
+- Multi-monitor support
+- Turbo support for controller inputs]]></description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

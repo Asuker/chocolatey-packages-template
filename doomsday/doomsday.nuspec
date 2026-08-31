@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>doomsday</id>
+    <version>2.3.1</version>
+    <title>Doomsday Engine</title>
+    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/doomsday/</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/40b73610f57da84c9be21966f84936fd7e8edce2/doomsday/icon.png</iconUrl>
+    <owners>Jason Newcomb</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <authors>Jaakko Keränen, Daniel Swanson</authors>
+    <projectUrl>https://dengine.net/</projectUrl>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/skyjake/Doomsday-Engine</projectSourceUrl>
+    <docsUrl>https://manual.dengine.net/</docsUrl>
+    <bugTrackerUrl>https://forum.zdoom.org/viewforum.php?f=21</bugTrackerUrl>
+    <copyright>1999-2020 Jaakko Keränen</copyright>
+    <tags>dengine doomsday doom heretic hexen</tags>
+    <releaseNotes>https://manual.dengine.net/version</releaseNotes>
+    <summary>An enhanced Doom/Heretic/Hexen source port for the Windows, macOS, and Linux platforms.</summary>
+    <description><![CDATA[The Doomsday Engine is an enhanced Doom/Heretic/Hexen source port for the Windows, macOS, and Linux platforms. It is based on the source code of id Software's Doom and Raven Software's Heretic and Hexen. The Doomsday Engine and the associated ports of Doom, Heretic and Hexen have been under development since 1999. The first versions were released in late 1999 and early 2000.
+
+The purpose of the project is to create versions of these classic games that retain the feel of the originals but are implemented using modern technologies such as 3D graphics and client/server networking. A lot of emphasis is placed on good-looking graphics and usability.
+
+Features:
+
+- **UI** Game profiles and add-on selection. Multiplayer server browser. In-game overlay with configuration options and console prompt.
+- **Graphics** Particle effects and dynamic lights. Bloom and vignette effects. Geometry-based ambient occlusion. Supports 3D models for objects (FBX, MD5) and sky boxes. Upscaling texture filter. Stereoscopic rendering modes.
+- **Audio** 3D sound effects and reverb (FMOD plugin). Supports music add-ons (MP3) and FluidSynth for high-quality MIDI music (Unix only).
+- **Multiplayer** Automatic discovery of LAN servers. Master server for public games. Tool for running servers in the background.
+- **Technology** Portable code built on Qt 5 and OpenGL.
+]]></description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

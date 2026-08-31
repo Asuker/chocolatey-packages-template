@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>nextdns</id>
+    <version>2.0.1</version>
+    <title>NextDNS</title>
+    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/nextdns/</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/cd9e791591743e1551d9d1a5f8d773bd6bd6fd20/nextdns/icon.png</iconUrl>
+    <owners>Jason Newcomb</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <authors>NextDNS Inc.</authors>
+    <projectUrl>https://nextdns.io/</projectUrl>
+    <docsUrl>https://help.nextdns.io/</docsUrl>
+    <copyright>2019-2022 NextDNS Inc.</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://help.nextdns.io/category/bugs</bugTrackerUrl>
+    <tags>nextdns dns doh</tags>
+    <summary>System wide DNS proxy for the NextDNS service.</summary>
+    <description>The NextDNS client runs in the background to manage your connection to the NextDNS service. It provides a system-wide DNS proxy affecting all lookups on the machine.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

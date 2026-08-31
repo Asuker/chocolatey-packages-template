@@ -1,0 +1,67 @@
+﻿# <img src="https://rawcdn.githack.com/Jarcho/chocolatey-packages/cf56f8193966a0334d89ffccacdac928f4d1a60a/imhex/icon.png" width="48" height="48"> [ImHex](https://chocolatey.org/packages/imhex)
+
+A Hex Editor for Reverse Engineers, Programmers and people that value their eye sight when working at 3 AM.
+
+## Features
+
+- Featureful hex view
+  - Byte patching
+  - Patch management
+  - Copy bytes as feature
+    - Bytes
+    - Hex string
+    - C, C++, C#, Rust, Python, Java & JavaScript array
+    - ASCII-Art hex view
+    - HTML self contained div
+  - String and hex search
+  - Colorful highlighting
+  - Goto from start, end and current cursor position
+- Custom C++-like pattern language for parsing highlighting a file's content
+  - Automatic loading based on MIME type
+  - arrays, pointers, structs, unions, enums, bitfields, using declarations, litte and big endian support
+  - Useful error messages, syntax highlighting and error marking
+- Data importing
+  - Base64 files
+  - IPS and IPS32 patches
+- Data exporting
+  - IPS and IPS32 patches
+- Data Exporting
+- Data inspector allowing interpretation of data as many different types (little and big endian)
+- Huge file support with fast and efficient loading
+- Strings search
+  - Copying of strings
+  - Copying of demangled strings
+- File hashing support
+  - CRC16 and CRC32 with custom initial values and polynomials
+  - MD4, MD5
+  - SHA-1, SHA-224, SHA-256, SHA-384, SHA-512
+- Disassembler supporting many different architectures
+  - ARM32 (ARM, Thumb, Cortex-M, aarch32)
+  - ARM64
+  - MIPS (MIPS32, MIPS64, MIPS32R6, Micro)
+  - x86 (16 bit, 32 bit, 64 bit)
+  - PowerPC (32 bit, 64 bit)
+  - Sparc
+  - SystemZ
+  - XCore
+  - M68K
+  - TMS320C64X
+  - M680X
+  - Ethereum
+- Bookmarks
+  - Region highlighting
+  - Comments
+- Data Analyzer
+  - File magic based file parser and MIME type database
+  - Byte distribution graph
+  - Entropy graph
+  - Highest and avarage entropy
+  - Encrypted / Compressed file detection
+- Helpful tools
+  - Itanium and MSVC demangler
+  - ASCII table
+  - Regex replacer
+  - Mathematical expression evaluator (Calculator)
+  - Hexadecimal Color picker
+- Built-in cheat sheet for pattern language and Math evaluator
+- Doesn't burn out your retinas when used in late-night sessions

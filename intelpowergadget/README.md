@@ -1,0 +1,5 @@
+# <img src="https://rawcdn.githack.com/Jarcho/chocolatey-packages/43dda0b49514396e66b487a5faf1e6aaec94ace2/intelpowergadget/icon.png" width="48" height="48"/> [intelpowergadget](https://chocolatey.org/packages/intelpowergadget)
+
+Intel® Power Gadget is a software-based power usage monitoring tool enabled for Intel® Core™ processors (starting from 2nd Generation). Intel® Atom™ processors are not supported. It is supported on Windows* and macOS* and includes an application, driver, and libraries to monitor and estimate real-time processor package power information in watts using the energy counters in the processor. With this release, we are providing functionality to evaluate power information on various platforms including notebooks, desktops and servers.
+
+Traditional methods to estimate power/energy usage of the processor has always been a cumbersome task that included special purpose tools or instrumentation on the platform along with third party equipment. The motivation for the tool was to assist end-users, ISV’s, OEM’s, developers, and others interested in a more precise estimation of power from a software level without any H/W instrumentation.

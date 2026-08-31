@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>krypton-cli</id>
+    <version>2.4.15.3</version>
+    <title>Krypton Developer Tools</title>
+    <packageSourceUrl>https://github.com/Jarcho/chocolatey-packages/tree/master/krypton-cli</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/Jarcho/chocolatey-packages/16776c89ff4ab34a16c1df5385701e04b6872269/krypton-cli/icon.png</iconUrl>
+    <owners>Jason Newcomb</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <authors>KryptCo, Inc.</authors>
+    <projectUrl>https://github.com/zobo/kr</projectUrl>
+    <copyright>2017-2018 KryptCo, Inc.</copyright>
+    <licenseUrl>https://github.com/kryptco/kr/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/zobo/kr</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/kryptco/kr/pull/286</bugTrackerUrl>
+    <tags>krypton pgp ssh</tags>
+    <summary>SSH authentication and PGP signing using a key stored on your phone.</summary>
+    <description>The Krypton Developer Tools enables the use of the Krypton mobile app from your computer. Allows authenticating ssh sessions as well as signing git commits.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
